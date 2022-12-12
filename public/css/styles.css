@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*---------------GENERAL--------------------*/
-html {
-  background: #f9f5f2;
-  background: linear-gradient(180deg, rgba(249, 245, 242, 1) 51%, rgba(245, 245, 245, 1) 94%);
+*{
+  box-sizing: border-box;
 }
 
-body {
+ html, body {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
-  width: 100vw;
-  height: 100vh;
+  background: linear-gradient(0deg, rgba(141, 112, 160, 1) 0%, rgba(201, 189, 209, 1) 0%, rgba(220, 214, 225, 1) 0%, rgba(245, 245, 245, 1) 43%);
 }
 
 h1 {
@@ -44,7 +42,7 @@ p{
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: #f9f5f2;
+background-color: rgba(245, 245, 245, 1);
 padding: 1rem 0;
 }
 
@@ -92,7 +90,7 @@ background-size: cover;
 }
 
 .header .header-photo .title div {
-  background-color: #f9f5f2;
+  background-color: rgba(245, 245, 245, 1);
   height: 10rem;
   width: 33rem;
   display: flex;
@@ -106,7 +104,7 @@ background-size: cover;
 }
 
 .header .header-photo .title h1, h3 {
-  color: #502F5A;
+  color: #48348D;
   margin-right: 2rem;
 }
 
@@ -135,15 +133,18 @@ background-size: cover;
 .XXSS-logos-home img{
   width: 2.3rem;
 }
+.XXSS-logos-home img:hover{
+  filter: invert(46%) sepia(18%) saturate(1083%) hue-rotate(220deg) brightness(100%) contrast(70%);}
 
 /*---------------ABOUT.HTML--------------------*/
 
 .photo-description-container {
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  align-items: center;
   gap: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+  min-height: 100vh;
 }
 
 .photo-description-container .img-container img{
@@ -153,7 +154,6 @@ background-size: cover;
 }
 .photo-description-container .img-container img:hover{
   width: 31rem;
-  /*box-shadow: 0px 0px 10px rgb(66, 1, 61);*/ 
 }
 
 .photo-description-container .description-container {
@@ -162,6 +162,7 @@ background-size: cover;
 
 .photo-description-container .description-container h2 {
   margin-bottom: 1.7rem;
+  color: #8D70A0;
   transition: 0.5s;
 }
 .photo-description-container .description-container h2:hover{
@@ -169,7 +170,6 @@ background-size: cover;
   color: #CD7A72;
   font-weight: 400;
 }
-
 
 .photo-description-container .description-container p {
   margin-bottom: 1.7rem;
@@ -184,17 +184,31 @@ background-size: cover;
   width: 2rem;
 }
 
+.photo-description-container .description-container .XXSS-logos img:hover {
+  width: 2.2rem;
+  filter: invert(46%) sepia(18%) saturate(1083%) hue-rotate(220deg) brightness(100%) contrast(70%);
+}
+
 /*---------------WORK.HTML--------------------*/
 
-.container {
+.work-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.container-img {
   position: relative;
-  width: 50%;
+  width: 30%;
 }
 
 .image {
-  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .overlay {
@@ -207,21 +221,32 @@ background-size: cover;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color:#8D70A0;
 }
 
-.container:hover .overlay {
+.container-img:hover .overlay {
   opacity: 1;
 }
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 1.8rem;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+.text2{
+  color: white;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
