@@ -30,16 +30,16 @@ h3 {
 }
 
 p{
-  line-height: 1.3rem;
-  font-size: 1.1rem ;
-  font-weight: 200;
+  line-height: 1.2rem;
+  font-size: 1rem ;
+  font-weight: 300;
 }
 
 .bold {
   font-weight: 600;
 }
 
-/*---------------NAV BAR--------------------*/
+/*---------------NAV BAR ALL PAGES--------------------*/
 .nav-bar-container{
 display: flex;
 justify-content: space-between;
@@ -69,10 +69,17 @@ padding: 1rem 0;
   text-transform: uppercase;
 }
 
-/*---------------HEADER INDEX.HTML--------------------*/
+.nav-bar-container .nav-container ul li a:hover {
+  color: #CD7A72;
+  font-weight: 700;
+}
+
+/*---------------INDEX.HTML--------------------*/
+header.header{
+background-image: url("../img/img1.jpg");
+background-size: cover;
+}
 .header .header-photo {
-  background-image: url("../img/img1.jpg");
-  background-size: cover;
   min-height: 100vh;
   display: flex;
   justify-content: flex-end;
@@ -94,18 +101,49 @@ padding: 1rem 0;
   align-items: flex-end;
 }
 
+.header .header-photo .title a {
+  text-decoration: none;  
+}
+
 .header .header-photo .title h1, h3 {
   color: #502F5A;
   margin-right: 2rem;
 }
 
-/*---------------MAIN ABOUT.HTML--------------------*/
+.header .header-photo .title h1:hover{
+  color:#CD7A72;
+}
+.little {
+  font-weight: 200;
+  font-size: 2.5rem;
+}
+
+/*.header .header-photo .title button{
+  border: 1px solid #502F5A;
+  color:#502F5A;
+  margin: 0.8rem 2rem 0 0;
+  padding: 0.5rem 6.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}*/
+
+.XXSS-logos-home {
+  display: flex;
+  gap: 1.4rem;
+  padding: 0 0 2rem 2rem;
+}
+.XXSS-logos-home img{
+  width: 2.3rem;
+}
+
+/*---------------ABOUT.HTML--------------------*/
 
 .photo-description-container {
   display: flex;
   justify-content: center;
   margin-top: 4rem;
   gap: 2rem;
+  padding-bottom: 4rem;
 }
 
 .photo-description-container .img-container img{
@@ -114,7 +152,7 @@ padding: 1rem 0;
  
 }
 .photo-description-container .img-container img:hover{
-  width: 33rem;
+  width: 31rem;
   /*box-shadow: 0px 0px 10px rgb(66, 1, 61);*/ 
 }
 
@@ -124,13 +162,66 @@ padding: 1rem 0;
 
 .photo-description-container .description-container h2 {
   margin-bottom: 1.7rem;
+  transition: 0.5s;
 }
+.photo-description-container .description-container h2:hover{
+  margin-bottom: 1.7rem;
+  color: #CD7A72;
+  font-weight: 400;
+}
+
 
 .photo-description-container .description-container p {
   margin-bottom: 1.7rem;
 }
 
+.photo-description-container .description-container .XXSS-logos{
+  display: flex;
+  gap: 1rem;
+}
 
-/*twitter: https: //twitter.com/mo_motorious
-https: //www.instagram.com/mo.motorious/
-https: //www.behance.net/Mo-Eid*/
+.photo-description-container .description-container .XXSS-logos img{
+  width: 2rem;
+}
+
+/*---------------WORK.HTML--------------------*/
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
