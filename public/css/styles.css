@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*---------------GENERAL--------------------*/
+html {
+  background: #f9f5f2;
+  background: linear-gradient(180deg, rgba(249, 245, 242, 1) 51%, rgba(245, 245, 245, 1) 94%);
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+
+p{
+  line-height: 1.3rem;
+  font-size: 1.1rem ;
+  font-weight: 200;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/*---------------NAV BAR--------------------*/
+.nav-bar-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #f9f5f2;
+padding: 1rem 0;
+}
+
+.nav-bar-container .logo-container {
+  padding-left: 2rem;
+}
+
+.logo {
+  width: 50px;
+  border-radius:50%;
+}
+
+.nav-bar-container .nav-container ul{
+  display: flex;
+  gap: 1rem;
+ padding-right: 2rem;
+}
+
+.nav-bar-container .nav-container ul li a{
+  text-decoration: none;
+  color: #1D1D1D;
+  text-transform: uppercase;
+}
+
+/*---------------HEADER INDEX.HTML--------------------*/
+.header .header-photo {
+  background-image: url("../img/img1.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .header-photo .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header .header-photo .title div {
+  background-color: #f9f5f2;
+  height: 10rem;
+  width: 33rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.header .header-photo .title h1, h3 {
+  color: #502F5A;
+  margin-right: 2rem;
+}
+
+/*---------------MAIN ABOUT.HTML--------------------*/
+
+.photo-description-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+
+.photo-description-container .img-container img{
+ width: 30rem;
+ transition: 0.5s;
+ 
+}
+.photo-description-container .img-container img:hover{
+  width: 33rem;
+  /*box-shadow: 0px 0px 10px rgb(66, 1, 61);*/ 
+}
+
+.photo-description-container .description-container {
+  width: 25rem;
+}
+
+.photo-description-container .description-container h2 {
+  margin-bottom: 1.7rem;
+}
+
+.photo-description-container .description-container p {
+  margin-bottom: 1.7rem;
+}
+
+
+/*twitter: https: //twitter.com/mo_motorious
+https: //www.instagram.com/mo.motorious/
+https: //www.behance.net/Mo-Eid*/
