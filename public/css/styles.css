@@ -6,6 +6,7 @@
 }
 
  html, body {
+  width: 100vw;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
@@ -44,6 +45,7 @@ justify-content: space-between;
 align-items: center;
 background-color: rgba(245, 245, 245, 1);
 padding: 1rem 0;
+position: sticky;
 }
 
 .nav-bar-container .logo-container {
@@ -356,3 +358,33 @@ background-size: cover;
 .page-title h3:hover {
   color: #CD7A72;
 }
+
+/*--------------SIMILAR ARTISTS PAGE-------------*/
+.similar-artists-container{
+ min-width: 100vw;
+ min-height: 100vh;
+ margin-bottom: 4rem;
+}
+
+.card {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.img-similar-artist {
+  height: 20rem;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+

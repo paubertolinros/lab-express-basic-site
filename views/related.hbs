@@ -1,0 +1,13 @@
+<div class="page-title">
+  <h3>SIMILAR ARTISTS</h3>
+</div>
+<!--{{data.[1].name}}*/-->
+<main class = "similar-artists-container">
+<div class="card">
+{{#each data}}
+{{>card this}}
+{{else}}
+<p>No artists so far.</p>
+{{/each}}
+</div>
+</main>
