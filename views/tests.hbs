@@ -1,0 +1,11 @@
+<h1>My artist choice:</h1>
+<h3> {{ name }}</h3>
+
+<p>He's {{ age }} years old and {{#if isArtist}} is the better artist! {{else}} he need more practice!{{/if}}</p>
+
+{{#each data}}
+{{>card this}}
+{{else}}
+<p>No dogs so far.</p>
+
+{{/each}}
